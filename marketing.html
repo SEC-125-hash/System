@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEC Smart Locks | Rent-Based Access Control</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .hero {
+      background: #1e3a8a;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background: white;
+      color: #1e3a8a;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .hero a:hover {
+      background: #e2e8f0;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background: #1e3a8a;
+      color: white;
+    }
+
+    .contact a {
+      background: white;
+      color: #1e3a8a;
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .contact a:hover {
+      background: #e2e8f0;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .marketing {
+      text-align: left;
+      background: white;
+      padding: 60px 20px;
+    }
+
+    .marketing .container {
+      max-width: 900px;
+    }
+
+    .marketing h2 {
+      color: #1e3a8a;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .marketing h3 {
+      color: #333;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .marketing blockquote {
+      font-style: italic;
+      background: #f9fafb;
+      border-left: 4px solid #1e3a8a;
+      padding: 15px 20px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>SEC Smart Locks</h1>
+    <p>Revolutionizing Rent-Based Room Access in Tanzania</p>
+    <a href="#contact">Get Started</a>
+    <a href="#marketing">Marketing Script</a>
+  </section>
+
+  <!-- About -->
+  <section>
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We provide smart locks powered by SIM card technology, allowing landlords to control room access based on rent payments.</p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section>
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <div style="font-size: 40px;">🔒</div>
+          <h3>Install Smart Lock</h3>
+          <p>Easy to install — no wiring needed.</p>
+        </div>
+        <div class="card">
+          <div style="font-size: 40px;">📲</div>
+          <h3>Control Remotely</h3>
+          <p>Control access via rent payment status.</p>
+        </div>
+        <div class="card">
+          <div style="font-size: 40px;">💵</div>
+          <h3>Automated System</h3>
+          <p>No rent, no access. Rent paid? Access restored.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Remote Lock/Unlock</h3>
+          <p>Control access with GSM network.</p>
+        </div>
+        <div class="card">
+          <h3>Auto-Lock After Rent Expiry</h3>
+          <p>Automates rent enforcement.</p>
+        </div>
+        <div class="card">
+          <h3>Physical Key Backup</h3>
+          <p>Manual key available if needed.</p>
+        </div>
+        <div class="card">
+          <h3>Battery Backup</h3>
+          <p>Stays online even during power cuts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section>
+    <div class="container">
+      <h2>Our Smart Locks</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Basic Model</h3>
+          <p>Affordable for individual landlords.</p>
+        </div>
+        <div class="card">
+          <h3>Advanced Model</h3>
+          <p>WiFi + GSM support with alerts.</p>
+        </div>
+        <div class="card">
+          <h3>Enterprise Model</h3>
+          <p>Centralized system for buildings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>📞 +255 XXX XXX XXX | ✉️ info@secsmartlocks.co.tz</p>
+      <p>📍 Dar es Salaam, Tanzania</p>
+      <a href="#marketing">See Our Sales Pitch</a>
+    </div>
+  </section>
+
+  <!-- Marketing Section -->
+  <section id="marketing" class="marketing">
+    <div class="container">
+      <h2>Smart Lock Sales Script (For Landlords)</h2>
+
+      <h3>Step 1: Anchor & Introduce Value</h3>
+      <blockquote>
+        "Most landlords spend over <strong>3 million Tsh per year</strong> chasing late payments, replacing lost keys, or hiring caretakers. That’s a lot of time and money gone — silently."<br><br>
+        "<strong>But what if your rooms could lock or unlock themselves based on rent payment?</strong> No keys to chase, no unpaid stays, no arguments."
+      </blockquote>
+
+      <h3>Step 2: Frame Around <em>Loss Aversion</em></h3>
+      <blockquote>
+        "With our system, you’ll never again worry about tenants overstaying without paying. The lock simply doesn’t work when rent expires.
+        And when rent is paid — it reactivates instantly."<br><br>
+        "<strong>No action needed from you</strong>. The system does it all — and it protects your income every single day."
+      </blockquote>
+
+      <h3>Step 3: Present the Bundle Offer</h3>
+      <blockquote>
+        "<strong>We offer 3 levels of protection:</strong><br><br>
+        1. Basic Security – Smart lock installed, pay-as-you-go control<br>
+        2. Smart Control – Lock + remote rent control + alerts<br>
+        3. Full Automation – Everything plus remote updates, reports, and support"<br><br>
+        <strong>Example Setup</strong> (for 10 rooms):<br>
+        - 10 smart locks<br>
+        - Gateways + WiFi control<br>
+        - Power setup & technician<br>
+        - Monthly plan — all in one
+      </blockquote>
+
+      <h3>Step 4: Emphasize Smart Payment Model</h3>
+      <blockquote>
+        "You don’t need to pay it all upfront.
+        We offer <strong>12 to 36 month payment plans</strong> — including hardware, technician, and cloud access."<br><br>
+        "<strong>Just one payment per month — and 100% profit control from Day One.</strong>"
+      </blockquote>
+
+      <h3>Step 5: Create a Positive Memory</h3>
+      <blockquote>
+        "And as a thank-you, <strong>we’ll give you a free emergency power bank</strong> with every 10-room system — for backup peace of mind."<br><br>
+        "Your tenants will love the experience.
+        You’ll love the <strong>predictable income, no stress, and full control</strong>."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 SEC Smart Locks | <a href="#marketing" style="color: #60a5fa;">Marketing</a>
+  </footer>
+
+</body>
+</html>
