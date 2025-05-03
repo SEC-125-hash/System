@@ -1,98 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Smart Lock Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f9fb;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
     }
 
     header {
-      background-color: #1f2937;
+      background: linear-gradient(135deg, #004080, #007BFF);
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
 
     nav {
-      background-color: #374151;
-      text-align: center;
-      padding: 1rem;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     nav a {
-      color: white;
-      margin: 0 1rem;
       text-decoration: none;
-      font-weight: bold;
+      color: #007BFF;
+      font-weight: 600;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #004080;
     }
 
-    section {
-      padding: 3rem 1rem;
-      max-width: 900px;
+    .container {
+      max-width: 1000px;
       margin: auto;
+      padding: 2rem 1.5rem;
     }
 
-    .block {
-      background-color: white;
-      border-radius: 12px;
+    section.content-section {
+      background: white;
       padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .highlight {
-      background-color: #e0f7fa;
+      border-radius: 12px;
+      margin: 1rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
 
     h2, h3 {
-      color: #1f2937;
+      color: #004080;
+      margin-bottom: 1rem;
     }
 
     p {
-      color: #4b5563;
       line-height: 1.7;
-      font-size: 1.05rem;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 1rem;
-      background-color: #2563eb;
+      background: linear-gradient(to right, #007BFF, #0056b3);
       color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
+      padding: 12px 25px;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: background 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #1d4ed8;
+      background: linear-gradient(to right, #0056b3, #003366);
     }
 
     footer {
-      background-color: #111827;
-      color: #9ca3af;
       text-align: center;
       padding: 2rem 1rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
-
 <body>
 
   <header>
     <h1>Smart Lock Solutions</h1>
-    <p>Modern Security for Landlords — Automated by Rent</p>
+    <p>Revolutionize Your Property Management with Our Automated Smart Locks</p>
   </header>
 
   <nav>
@@ -101,43 +116,46 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Marketing Section -->
-  <section id="marketing">
-    <div class="block highlight">
-      <h2>Protect Your Income with Smart Lock Technology</h2>
-      <p>Say goodbye to chasing late payments, lost keys, and arguments with tenants. With our automated smart lock system, your rooms lock or unlock themselves — based on rent payments.</p>
-    </div>
+  <div class="container">
 
-    <div class="block">
-      <h3>Hands-Free Security</h3>
-      <p>Once rent expires, the lock simply stops working. Once rent is paid, it reactivates instantly. No keys, no follow-up, no hassle. Everything works automatically in the background.</p>
-    </div>
+    <section id="marketing" class="content-section">
+      <h2>Protect Your Income with Our Smart Lock System</h2>
+    </section>
 
-    <div class="block highlight">
-      <h3>Flexible Payment Options</h3>
-      <p>We offer <strong>12 to 36 month payment plans</strong> that cover everything — installation, hardware, cloud access, and support. One flat monthly fee. You start controlling your income from Day One.</p>
-    </div>
+    <section class="content-section">
+      <p>Say goodbye to chasing late payments, lost keys, and tenant disputes. Our smart lock system lets you manage your rooms based on rent payment — automatically.</p>
+    </section>
 
-    <div class="block">
-      <h3>Free Backup Power Offer</h3>
-      <p>Every 10-room setup includes a free emergency power bank — so your system keeps working even during blackouts. Peace of mind for you, convenience for your tenants.</p>
-    </div>
+    <section class="content-section">
+      <p>The system ensures your rooms lock or unlock depending on rent status. No manual intervention needed. You gain protection, automation, and peace of mind.</p>
+    </section>
 
-    <div class="block highlight">
-      <h3>Why Landlords Love It</h3>
-      <p>Your tenants enjoy the convenience. You enjoy predictable income, zero stress, and full control — all backed by smart technology.</p>
-      <a href="#contact" class="btn">Get Started Now</a>
-    </div>
-  </section>
+    <section class="content-section">
+      <h3>Flexible Payment Plans</h3>
+      <p>Enjoy hassle-free payment with <strong>12 to 36-month plans</strong>. One simple monthly payment, full control from Day One.</p>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="block">
+    <section class="content-section">
+      <h3>Free Emergency Backup</h3>
+      <p>Get a <strong>free emergency power bank</strong> for every 10-room installation — ensuring reliability even during outages.</p>
+    </section>
+
+    <section class="content-section">
+      <p>Tenants benefit from convenience. You gain <strong>predictable income</strong>, <strong>zero stress</strong>, and <strong>total control</strong>.</p>
+      <a href="#contact" class="btn">Contact Us for More Information</a>
+    </section>
+
+    <section id="contact" class="content-section">
       <h2>Contact Us</h2>
-      <p>Ready to bring automation to your property? Contact us today and discover how easy it is to secure your income with our smart lock systems.</p>
+      <p>Ready to secure your property with our smart lock systems?</p>
+    </section>
+
+    <section class="content-section">
+      <p>We’d love to help. Reach out and discover how we can transform your property management.</p>
       <a href="mailto:info@smartlocks.com" class="btn">Email Us</a>
-    </div>
-  </section>
+    </section>
+
+  </div>
 
   <footer>
     <p>&copy; 2025 Smart Lock Solutions. All rights reserved.</p>
